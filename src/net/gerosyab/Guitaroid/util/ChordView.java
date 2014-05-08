@@ -351,6 +351,7 @@ public class ChordView extends View {
 
 	}
 
+	//why it is outside of view in 1080x1920 resolution... why!!
 	private void drawFretNum(Canvas canvas){
 		canvas.drawText(Integer.toString(fretNum[0]), LEFT_MARGIN, VIEW_UPPER_MAGIN_FOR_MUTE_SCALE + GAP_FROM_NUT + (FRET_NUM_TEXT_SIZE / 3), paintFretNum);
 		
@@ -434,6 +435,7 @@ public class ChordView extends View {
 	
 	}
 	
+	//why it is outside of view in 1080x1920 resolution... why!!
 	private void drawNote(Canvas canvas){
 		//6th String
 		if(this.position[0] == fretNum[0]){
