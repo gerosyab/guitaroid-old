@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/rhythmaGuide_groupLinear"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_vertical"
+  android:background="#CC222222">
+        <TextView
+    	android:id="@+id/rhythmGuide_groupText"
+    	android:layout_width="wrap_content"
+    	android:layout_height="50dp"
+    	android:textSize="18sp"
+    	android:textColor="#FFDDDDDD"
+    	android:textStyle="bold"
+    	android:paddingLeft="45dp"
+    	android:gravity="center_vertical"/>
+</LinearLayout>

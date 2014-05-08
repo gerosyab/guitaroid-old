@@ -1,0 +1,72 @@
+# view res/layout/chord_book.xml #generated:101
+# view res/layout/chord_book.xml #generated:59
+# view res/layout/chord_book.xml #generated:80
+# view res/layout/chord_selector.xml #generated:78
+# view res/layout/chord_selector.xml #generated:99
+# view res/layout/ear_test_chord.xml #generated:115
+# view res/layout/ear_test_chord.xml #generated:94
+# view res/layout/ear_test_note.xml #generated:92
+# view res/layout/metronome.xml #generated:217
+# view res/layout/metronome_bak.xml #generated:114
+# view res/layout/rhythmguide.xml #generated:32
+-keep class kankan.wheel.widget.WheelView { <init>(...); }
+
+# view AndroidManifest.xml #generated:144
+-keep class net.gerosyab.Guitaroid.activity.ChangeLogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class net.gerosyab.Guitaroid.activity.ChordBookActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class net.gerosyab.Guitaroid.activity.ChordSelector { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class net.gerosyab.Guitaroid.activity.EarTestChordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class net.gerosyab.Guitaroid.activity.EarTestNoteActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class net.gerosyab.Guitaroid.activity.EarTestSelect { <init>(...); }
+
+# view AndroidManifest.xml #generated:9
+-keep class net.gerosyab.Guitaroid.activity.GuitaroidMain { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class net.gerosyab.Guitaroid.activity.Information { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class net.gerosyab.Guitaroid.activity.MetronomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class net.gerosyab.Guitaroid.activity.RhythmGuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class net.gerosyab.Guitaroid.activity.SongPlayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class net.gerosyab.Guitaroid.activity.SongSelect { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class net.gerosyab.Guitaroid.activity.VirtualGuitarChordLibraryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class net.gerosyab.Guitaroid.service.MetronomeService { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class net.gerosyab.Guitaroid.service.RhythmGuideService { <init>(...); }
+
+# view res/layout/chord_book.xml #generated:19
+# view res/layout/chord_selector.xml #generated:18
+-keep class net.gerosyab.Guitaroid.util.ChordView { <init>(...); }
+
+# onClick res/layout/virtual_guitar_chord_library2.xml #generated:123
+# onClick res/layout/virtual_guitar_chord_library2.xml #generated:134
+# onClick res/layout/virtual_guitar_chord_library2.xml #generated:145
+# onClick res/layout/virtual_guitar_chord_library2.xml #generated:156
+# onClick res/layout/virtual_guitar_chord_library2.xml #generated:172
+# onClick res/layout/virtual_guitar_chord_library2.xml #generated:184
+# onClick res/layout/virtual_guitar_chord_library2.xml #generated:195
+# onClick res/layout/virtual_guitar_chord_library2.xml #generated:206
+-keepclassmembers class * { *** chordClickListener(...); }
+

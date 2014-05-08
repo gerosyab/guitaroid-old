@@ -1,0 +1,927 @@
+kankan.wheel.R -> kankan.wheel.b:
+kankan.wheel.R$drawable -> kankan.wheel.a:
+    int wheel_bg -> a
+    int wheel_val -> b
+kankan.wheel.widget.ItemsRange -> kankan.wheel.widget.e:
+    int first -> a
+    int count -> b
+    int getFirst() -> a
+    int getLast() -> b
+    int getCount() -> c
+    boolean contains(int) -> a
+kankan.wheel.widget.OnWheelChangedListener -> kankan.wheel.widget.g:
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+kankan.wheel.widget.OnWheelScrollListener -> kankan.wheel.widget.j:
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+kankan.wheel.widget.WheelRecycle -> kankan.wheel.widget.i:
+    java.util.List items -> a
+    java.util.List emptyItems -> b
+    kankan.wheel.widget.WheelView wheel -> c
+    int recycleItems(android.widget.LinearLayout,int,kankan.wheel.widget.ItemsRange) -> a
+    android.view.View getItem() -> a
+    android.view.View getEmptyItem() -> b
+    void clearAll() -> c
+    java.util.List addView(android.view.View,java.util.List) -> a
+    android.view.View getCachedView(java.util.List) -> a
+kankan.wheel.widget.WheelScroller -> kankan.wheel.widget.d:
+    kankan.wheel.widget.WheelScroller$ScrollingListener listener -> a
+    android.content.Context context -> b
+    android.view.GestureDetector gestureDetector -> c
+    android.widget.Scroller scroller -> d
+    int lastScrollY -> e
+    float lastTouchedY -> f
+    boolean isScrollingPerformed -> g
+    android.view.GestureDetector$SimpleOnGestureListener gestureListener -> h
+    int MESSAGE_SCROLL -> i
+    int MESSAGE_JUSTIFY -> j
+    android.os.Handler animationHandler -> k
+    void scroll$255f295(int) -> a
+    void stopScrolling() -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+    void setNextMessage(int) -> b
+    void clearMessages() -> c
+    void justify() -> d
+    void startScrolling() -> e
+    void finishScrolling() -> b
+    void access$0(kankan.wheel.widget.WheelScroller,int) -> a
+    android.widget.Scroller access$1(kankan.wheel.widget.WheelScroller) -> a
+    int access$2(kankan.wheel.widget.WheelScroller) -> b
+    void access$3$306a2cc4(kankan.wheel.widget.WheelScroller) -> c
+    kankan.wheel.widget.WheelScroller$ScrollingListener access$4(kankan.wheel.widget.WheelScroller) -> d
+    android.os.Handler access$5(kankan.wheel.widget.WheelScroller) -> e
+    void access$6(kankan.wheel.widget.WheelScroller) -> f
+kankan.wheel.widget.WheelScroller$1 -> kankan.wheel.widget.c:
+    kankan.wheel.widget.WheelScroller this$0 -> a
+    boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onScroll
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+kankan.wheel.widget.WheelScroller$2 -> kankan.wheel.widget.b:
+    kankan.wheel.widget.WheelScroller this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+kankan.wheel.widget.WheelScroller$ScrollingListener -> kankan.wheel.widget.a:
+    void onScroll(int) -> a
+    void onStarted() -> a
+    void onFinished() -> b
+    void onJustify() -> c
+kankan.wheel.widget.WheelView -> kankan.wheel.widget.WheelView:
+    int[] SHADOWS_COLORS -> a
+    int currentItem -> b
+    int visibleItems -> c
+    int itemHeight -> d
+    android.graphics.drawable.Drawable centerDrawable -> e
+    android.graphics.drawable.GradientDrawable topShadow -> f
+    android.graphics.drawable.GradientDrawable bottomShadow -> g
+    kankan.wheel.widget.WheelScroller scroller -> h
+    boolean isScrollingPerformed -> i
+    int scrollingOffset -> j
+    boolean isCyclic -> k
+    android.widget.LinearLayout itemsLayout -> l
+    int firstItem -> m
+    kankan.wheel.widget.adapters.WheelViewAdapter viewAdapter -> n
+    kankan.wheel.widget.WheelRecycle recycle -> o
+    java.util.List changingListeners -> p
+    java.util.List scrollingListeners -> q
+    java.util.List clickingListeners -> r
+    kankan.wheel.widget.WheelScroller$ScrollingListener scrollingListener -> s
+    android.database.DataSetObserver dataObserver -> t
+    void initData$faab20d() -> f
+    void setVisibleItems(int) -> a
+    kankan.wheel.widget.adapters.WheelViewAdapter getViewAdapter() -> a
+    void setViewAdapter(kankan.wheel.widget.adapters.WheelViewAdapter) -> a
+    void addChangingListener(kankan.wheel.widget.OnWheelChangedListener) -> a
+    void addScrollingListener(kankan.wheel.widget.OnWheelScrollListener) -> a
+    void notifyScrollingListenersAboutStart() -> b
+    void notifyScrollingListenersAboutEnd() -> c
+    int getCurrentItem() -> d
+    void setCurrentItem$2563266(int) -> c
+    void setCurrentItem(int) -> b
+    boolean isCyclic() -> e
+    void invalidateWheel(boolean) -> a
+    int getItemHeight() -> g
+    int calculateLayoutWidth(int,int) -> a
+    void onMeasure(int,int) -> onMeasure
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void layout(int,int) -> b
+    void onDraw(android.graphics.Canvas) -> onDraw
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void createItemsLayout() -> h
+    boolean addViewItem(int,boolean) -> a
+    boolean isValidItemIndex(int) -> d
+    void access$0(kankan.wheel.widget.WheelView,boolean) -> a
+    void access$1(kankan.wheel.widget.WheelView,int) -> a
+    int access$2(kankan.wheel.widget.WheelView) -> a
+    void access$3(kankan.wheel.widget.WheelView,int) -> b
+    kankan.wheel.widget.WheelScroller access$4(kankan.wheel.widget.WheelView) -> b
+    boolean access$5(kankan.wheel.widget.WheelView) -> c
+kankan.wheel.widget.WheelView$1 -> kankan.wheel.widget.f:
+    kankan.wheel.widget.WheelView this$0 -> a
+    void onStarted() -> a
+    void onScroll(int) -> a
+    void onFinished() -> b
+    void onJustify() -> c
+kankan.wheel.widget.WheelView$2 -> kankan.wheel.widget.h:
+    kankan.wheel.widget.WheelView this$0 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+kankan.wheel.widget.adapters.AbstractWheelAdapter -> kankan.wheel.widget.a.c:
+    java.util.List datasetObservers -> a
+    android.view.View getEmptyItem(android.view.View,android.view.ViewGroup) -> a
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+kankan.wheel.widget.adapters.AbstractWheelTextAdapter -> kankan.wheel.widget.a.e:
+    int textColor -> a
+    int textSize -> b
+    android.content.Context context -> c
+    android.view.LayoutInflater inflater -> d
+    int itemResourceId -> e
+    int itemTextResourceId -> f
+    int emptyItemResourceId -> g
+    void setTextSize$13462e() -> b
+    void setItemTextResource(int) -> b
+    java.lang.CharSequence getItemText(int) -> a
+    android.view.View getItem(int,android.view.View,android.view.ViewGroup) -> a
+    android.view.View getEmptyItem(android.view.View,android.view.ViewGroup) -> a
+    void configureTextView(android.widget.TextView) -> a
+    android.widget.TextView getTextView(android.view.View,int) -> a
+    android.view.View getView(int,android.view.ViewGroup) -> a
+kankan.wheel.widget.adapters.ArrayWheelAdapter -> kankan.wheel.widget.a.a:
+    java.lang.Object[] items -> a
+    java.lang.CharSequence getItemText(int) -> a
+    int getItemsCount() -> a
+kankan.wheel.widget.adapters.NumericWheelAdapter -> kankan.wheel.widget.a.b:
+    int minValue -> a
+    int maxValue -> b
+    java.lang.String format -> c
+    java.lang.CharSequence getItemText(int) -> a
+    int getItemsCount() -> a
+kankan.wheel.widget.adapters.WheelViewAdapter -> kankan.wheel.widget.a.d:
+    int getItemsCount() -> a
+    android.view.View getItem(int,android.view.View,android.view.ViewGroup) -> a
+    android.view.View getEmptyItem(android.view.View,android.view.ViewGroup) -> a
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+net.gerosyab.Guitaroid.BpmToSec -> net.gerosyab.Guitaroid.bc:
+    int[] MilliSecTable -> a
+net.gerosyab.Guitaroid.ChangeLogActivity -> net.gerosyab.Guitaroid.ChangeLogActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+net.gerosyab.Guitaroid.ChordBookActivity -> net.gerosyab.Guitaroid.ChordBookActivity:
+    java.lang.String PREFERENCE_NAME -> k
+    android.widget.TextView chordText -> l
+    kankan.wheel.widget.WheelView rootWheel -> a
+    kankan.wheel.widget.WheelView extWheel -> b
+    kankan.wheel.widget.WheelView varWheel -> c
+    java.util.HashMap hashMap -> m
+    java.util.ArrayList array -> n
+    java.lang.String[] extStrArr -> d
+    java.lang.String rootStr -> o
+    java.lang.String extStr -> p
+    int varIdx -> q
+    boolean isScroll -> e
+    boolean[] mute -> f
+    boolean loading -> g
+    boolean isDialogDismiss -> h
+    android.widget.Button btn -> r
+    net.gerosyab.Guitaroid.ChordView chordView -> s
+    net.gerosyab.Guitaroid.ChordBookActivity$SoundThread thread -> i
+    android.content.Context context -> t
+    android.media.SoundPool soundPool -> u
+    int[] rawResIds -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void updateExts(kankan.wheel.widget.WheelView,java.lang.String[][],int) -> a
+    void updateVars(kankan.wheel.widget.WheelView,int) -> a
+    void updateChord$403b452f(int) -> a
+    void writePreference() -> a
+    android.media.SoundPool access$0(net.gerosyab.Guitaroid.ChordBookActivity) -> a
+    void access$1(net.gerosyab.Guitaroid.ChordBookActivity,kankan.wheel.widget.WheelView,java.lang.String[][],int) -> a
+    void access$2(net.gerosyab.Guitaroid.ChordBookActivity,kankan.wheel.widget.WheelView,int) -> a
+    void access$3$2a27272c(net.gerosyab.Guitaroid.ChordBookActivity,int) -> a
+net.gerosyab.Guitaroid.ChordBookActivity$1 -> net.gerosyab.Guitaroid.u:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+net.gerosyab.Guitaroid.ChordBookActivity$10 -> net.gerosyab.Guitaroid.bj:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.ChordBookActivity$11 -> net.gerosyab.Guitaroid.bl:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+net.gerosyab.Guitaroid.ChordBookActivity$12 -> net.gerosyab.Guitaroid.bk:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onLoadComplete(android.media.SoundPool,int,int) -> onLoadComplete
+net.gerosyab.Guitaroid.ChordBookActivity$2 -> net.gerosyab.Guitaroid.v:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+net.gerosyab.Guitaroid.ChordBookActivity$3 -> net.gerosyab.Guitaroid.w:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onLoadComplete(android.media.SoundPool,int,int) -> onLoadComplete
+net.gerosyab.Guitaroid.ChordBookActivity$4 -> net.gerosyab.Guitaroid.x:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.ChordBookActivity$5 -> net.gerosyab.Guitaroid.y:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.ChordBookActivity$6 -> net.gerosyab.Guitaroid.aa:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.ChordBookActivity$7 -> net.gerosyab.Guitaroid.ab:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+net.gerosyab.Guitaroid.ChordBookActivity$8 -> net.gerosyab.Guitaroid.ac:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.ChordBookActivity$9 -> net.gerosyab.Guitaroid.ae:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+net.gerosyab.Guitaroid.ChordBookActivity$ExtAdapter -> net.gerosyab.Guitaroid.az:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    android.view.View getItem(int,android.view.View,android.view.ViewGroup) -> a
+    int getItemsCount() -> a
+    java.lang.CharSequence getItemText(int) -> a
+net.gerosyab.Guitaroid.ChordBookActivity$RootAdapter -> net.gerosyab.Guitaroid.f:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    android.view.View getItem(int,android.view.View,android.view.ViewGroup) -> a
+    int getItemsCount() -> a
+    java.lang.CharSequence getItemText(int) -> a
+net.gerosyab.Guitaroid.ChordBookActivity$SoundThread -> net.gerosyab.Guitaroid.bb:
+    net.gerosyab.Guitaroid.ChordBookActivity this$0 -> a
+    void run() -> run
+net.gerosyab.Guitaroid.ChordData -> net.gerosyab.Guitaroid.i:
+    java.lang.String[] ROOT -> a
+    java.lang.String[][] EXTENSION -> b
+    java.util.ArrayList varArray -> d
+    java.util.HashMap extMap -> e
+    java.util.HashMap rootMap -> c
+    net.gerosyab.Guitaroid.ChordData$Chord getChord(java.lang.String,java.lang.String,int) -> a
+    net.gerosyab.Guitaroid.ChordData$Chord getChord(java.lang.String) -> a
+net.gerosyab.Guitaroid.ChordData$Chord -> net.gerosyab.Guitaroid.ck:
+    java.lang.String root -> b
+    java.lang.String ext -> c
+    int[] position -> a
+    net.gerosyab.Guitaroid.ChordData this$0 -> d
+net.gerosyab.Guitaroid.ChordSelector -> net.gerosyab.Guitaroid.ChordSelector:
+    android.widget.TextView chordText -> k
+    kankan.wheel.widget.WheelView rootWheel -> a
+    kankan.wheel.widget.WheelView extWheel -> b
+    java.util.HashMap hashMap -> l
+    java.util.ArrayList array -> m
+    java.lang.String[] extStrArr -> c
+    java.lang.String rootStr -> d
+    java.lang.String extStr -> e
+    boolean isScroll -> f
+    boolean[] mute -> g
+    boolean loading -> h
+    android.widget.Button btn -> n
+    android.widget.Button ok -> o
+    android.widget.Button cancel -> p
+    net.gerosyab.Guitaroid.ChordView chordView -> q
+    net.gerosyab.Guitaroid.ChordSelector$SoundThread thread -> i
+    android.content.Context context -> r
+    android.media.SoundPool soundPool -> s
+    int[] rawResIds -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void updateExts(kankan.wheel.widget.WheelView,java.lang.String[][],int) -> a
+    void updateChord(int) -> a
+    android.media.SoundPool access$0(net.gerosyab.Guitaroid.ChordSelector) -> a
+    void access$1(net.gerosyab.Guitaroid.ChordSelector,kankan.wheel.widget.WheelView,java.lang.String[][],int) -> a
+    void access$2(net.gerosyab.Guitaroid.ChordSelector,int) -> a
+net.gerosyab.Guitaroid.ChordSelector$1 -> net.gerosyab.Guitaroid.l:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onLoadComplete(android.media.SoundPool,int,int) -> onLoadComplete
+net.gerosyab.Guitaroid.ChordSelector$10 -> net.gerosyab.Guitaroid.n:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onLoadComplete(android.media.SoundPool,int,int) -> onLoadComplete
+net.gerosyab.Guitaroid.ChordSelector$2 -> net.gerosyab.Guitaroid.m:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.ChordSelector$3 -> net.gerosyab.Guitaroid.au:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.ChordSelector$4 -> net.gerosyab.Guitaroid.at:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.ChordSelector$5 -> net.gerosyab.Guitaroid.as:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.ChordSelector$6 -> net.gerosyab.Guitaroid.ar:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.ChordSelector$7 -> net.gerosyab.Guitaroid.aq:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+net.gerosyab.Guitaroid.ChordSelector$8 -> net.gerosyab.Guitaroid.ap:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.ChordSelector$9 -> net.gerosyab.Guitaroid.ao:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+net.gerosyab.Guitaroid.ChordSelector$ExtAdapter -> net.gerosyab.Guitaroid.bm:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    android.view.View getItem(int,android.view.View,android.view.ViewGroup) -> a
+    int getItemsCount() -> a
+    java.lang.CharSequence getItemText(int) -> a
+net.gerosyab.Guitaroid.ChordSelector$RootAdapter -> net.gerosyab.Guitaroid.bi:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    android.view.View getItem(int,android.view.View,android.view.ViewGroup) -> a
+    int getItemsCount() -> a
+    java.lang.CharSequence getItemText(int) -> a
+net.gerosyab.Guitaroid.ChordSelector$SoundThread -> net.gerosyab.Guitaroid.g:
+    net.gerosyab.Guitaroid.ChordSelector this$0 -> a
+    void run() -> run
+net.gerosyab.Guitaroid.ChordView -> net.gerosyab.Guitaroid.ChordView:
+    java.lang.String DEBUG_TAG -> a
+    java.lang.String[] NOTE -> b
+    int LINE_COLOR -> c
+    int DOT_COLOR -> d
+    int MUTE_COLOR -> e
+    int FRET_NUM_COLOR -> f
+    int NUT_COLOR -> g
+    int CIRCLE_COLOR -> h
+    int X_COLOR -> i
+    int NOTE_COLOR -> j
+    float LINE_STROKE -> k
+    float MUTE_STROKE -> l
+    float NUT_STROKE -> m
+    float X_STROKE -> n
+    float FRET_NUM_TEXT_SIZE -> o
+    float NOTE_TEXT_SIZE -> p
+    float VIEW_WIDTH_SCALE -> q
+    float VIEW_HEIGHT_SCALE -> r
+    float VIEW_LEFT_MARGIN_FOR_FRET_NUM_SCALE -> s
+    float VIEW_UPPER_MAGIN_FOR_MUTE_SCALE -> t
+    float FRET_GAP_SCALE -> u
+    float STRING_GAP_SCALE -> v
+    float GAP_FROM_NUT -> w
+    float LEFT_MARGIN -> x
+    float BOTTOM_MARGIN_FROM_NUT -> y
+    float CIRCLE_RADIUS -> z
+    float DOT_RADIUS -> A
+    float X_COEFF -> B
+    int[] fretNum -> C
+    int[] position -> D
+    int barreFret -> E
+    int barreStart -> F
+    int barreEnd -> G
+    boolean isBarre -> H
+    boolean[] mute -> I
+    java.lang.String[] note -> J
+    android.graphics.Paint paintLine -> K
+    android.graphics.Paint paintDot -> L
+    android.graphics.Paint paintMute -> M
+    android.graphics.Paint paintFretNum -> N
+    android.graphics.Paint paintNut -> O
+    android.graphics.Paint paintCircle -> P
+    android.graphics.Paint paintX -> Q
+    android.graphics.Paint paintNote -> R
+    void setChord(java.lang.String,java.lang.String,int) -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+net.gerosyab.Guitaroid.EarTestChordActivity -> net.gerosyab.Guitaroid.EarTestChordActivity:
+    android.widget.TextView earTestText -> a
+    android.widget.Button soundBtn -> s
+    android.widget.Button tryBtn -> t
+    android.widget.Button newTestBtn -> u
+    android.widget.Button replayBtn -> b
+    kankan.wheel.widget.WheelView rootWheel -> c
+    kankan.wheel.widget.WheelView extWheel -> d
+    android.content.Context context -> e
+    android.media.SoundPool soundPool -> v
+    int[] rawResIds -> f
+    boolean isScroll -> g
+    boolean[] mute -> h
+    java.lang.String[] ROOT -> i
+    java.lang.String[] EXTENSION -> j
+    java.util.Random random -> k
+    int root_num -> l
+    int ext_num -> m
+    net.gerosyab.Guitaroid.ChordData$Chord chord -> n
+    java.lang.String rootStr -> o
+    java.lang.String extStr -> p
+    java.lang.String resultStr -> q
+    android.widget.Toast toast -> r
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    android.media.SoundPool access$0(net.gerosyab.Guitaroid.EarTestChordActivity) -> a
+net.gerosyab.Guitaroid.EarTestChordActivity$1 -> net.gerosyab.Guitaroid.o:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.EarTestChordActivity$2 -> net.gerosyab.Guitaroid.p:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.EarTestChordActivity$3 -> net.gerosyab.Guitaroid.s:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.EarTestChordActivity$4 -> net.gerosyab.Guitaroid.t:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.EarTestChordActivity$5 -> net.gerosyab.Guitaroid.q:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.EarTestChordActivity$6 -> net.gerosyab.Guitaroid.r:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+net.gerosyab.Guitaroid.EarTestChordActivity$7 -> net.gerosyab.Guitaroid.j:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.EarTestChordActivity$ExtAdapter -> net.gerosyab.Guitaroid.ct:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    android.view.View getItem(int,android.view.View,android.view.ViewGroup) -> a
+    int getItemsCount() -> a
+    java.lang.CharSequence getItemText(int) -> a
+net.gerosyab.Guitaroid.EarTestChordActivity$RootAdapter -> net.gerosyab.Guitaroid.bt:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    android.view.View getItem(int,android.view.View,android.view.ViewGroup) -> a
+    int getItemsCount() -> a
+    java.lang.CharSequence getItemText(int) -> a
+net.gerosyab.Guitaroid.EarTestChordActivity$SoundThread1 -> net.gerosyab.Guitaroid.bh:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    void run() -> run
+net.gerosyab.Guitaroid.EarTestChordActivity$SoundThread2 -> net.gerosyab.Guitaroid.bn:
+    net.gerosyab.Guitaroid.EarTestChordActivity this$0 -> a
+    void run() -> run
+net.gerosyab.Guitaroid.EarTestNoteActivity -> net.gerosyab.Guitaroid.EarTestNoteActivity:
+    android.widget.TextView earTestText -> a
+    android.widget.Button soundBtn -> m
+    android.widget.Button tryBtn -> n
+    android.widget.Button newTestBtn -> o
+    android.widget.Button replayBtn -> b
+    kankan.wheel.widget.WheelView rootWheel -> c
+    android.content.Context context -> d
+    android.media.SoundPool soundPool -> p
+    int[] rawResIds -> e
+    boolean isScroll -> f
+    java.lang.String[] NOTE -> g
+    java.util.Random random -> h
+    int note_num -> i
+    java.lang.String noteStr -> j
+    java.lang.String resultStr -> k
+    android.widget.Toast toast -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    android.media.SoundPool access$0(net.gerosyab.Guitaroid.EarTestNoteActivity) -> a
+net.gerosyab.Guitaroid.EarTestNoteActivity$1 -> net.gerosyab.Guitaroid.ba:
+    net.gerosyab.Guitaroid.EarTestNoteActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.EarTestNoteActivity$2 -> net.gerosyab.Guitaroid.bd:
+    net.gerosyab.Guitaroid.EarTestNoteActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.EarTestNoteActivity$3 -> net.gerosyab.Guitaroid.be:
+    net.gerosyab.Guitaroid.EarTestNoteActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.EarTestNoteActivity$4 -> net.gerosyab.Guitaroid.bf:
+    net.gerosyab.Guitaroid.EarTestNoteActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.EarTestNoteActivity$5 -> net.gerosyab.Guitaroid.ax:
+    net.gerosyab.Guitaroid.EarTestNoteActivity this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.EarTestNoteActivity$6 -> net.gerosyab.Guitaroid.aw:
+    net.gerosyab.Guitaroid.EarTestNoteActivity this$0 -> a
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+net.gerosyab.Guitaroid.EarTestNoteActivity$RootAdapter -> net.gerosyab.Guitaroid.cp:
+    net.gerosyab.Guitaroid.EarTestNoteActivity this$0 -> a
+    android.view.View getItem(int,android.view.View,android.view.ViewGroup) -> a
+    int getItemsCount() -> a
+    java.lang.CharSequence getItemText(int) -> a
+net.gerosyab.Guitaroid.EarTestSelect -> net.gerosyab.Guitaroid.EarTestSelect:
+    java.lang.String[] testList -> b
+    android.content.Context context -> a
+    void onCreate(android.os.Bundle) -> onCreate
+net.gerosyab.Guitaroid.EarTestSelect$1 -> net.gerosyab.Guitaroid.z:
+    net.gerosyab.Guitaroid.EarTestSelect this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+net.gerosyab.Guitaroid.GuitaroidMain -> net.gerosyab.Guitaroid.GuitaroidMain:
+    android.widget.ImageView metronomeImage -> a
+    android.widget.ImageView rhythmGuideImage -> b
+    android.widget.ImageView virtualGuitarImage -> c
+    android.widget.ImageView songPlayImage -> d
+    android.widget.ImageView earTestImage -> e
+    android.widget.ImageView chordBookImage -> f
+    android.widget.LinearLayout metronomeLinear -> t
+    android.widget.LinearLayout rhythmGuideLinear -> u
+    android.widget.LinearLayout virtualGuitarLinear -> v
+    android.widget.LinearLayout songPlayLinear -> w
+    android.widget.LinearLayout earTestLinear -> x
+    android.widget.LinearLayout chordBookLinear -> y
+    net.gerosyab.Guitaroid.ChordData chordData -> z
+    android.content.Context context -> g
+    int metronomeLinearWidth -> h
+    int rhythmGuideLinearWidth -> i
+    int virtualGuitarLinearWidth -> j
+    int songPlayLinearWidth -> k
+    int earTestLinearWidth -> l
+    int chordBookLinearWidth -> m
+    int metronomeLinearHeight -> n
+    int rhythmGuideLinearHeight -> o
+    int virtualGuitarLinearHeight -> p
+    int songPlayLinearHeight -> q
+    int earTestLinearHeight -> r
+    int chordBookLinearHeight -> s
+    boolean mBackKeyFlag -> A
+    android.os.Handler mHandler -> B
+    void onCreate(android.os.Bundle) -> onCreate
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    void onBackPressed() -> onBackPressed
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$0$8a1d8bf(net.gerosyab.Guitaroid.GuitaroidMain) -> a
+net.gerosyab.Guitaroid.GuitaroidMain$1 -> net.gerosyab.Guitaroid.bp:
+    net.gerosyab.Guitaroid.GuitaroidMain this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+net.gerosyab.Guitaroid.GuitaroidMain$2 -> net.gerosyab.Guitaroid.bq:
+    net.gerosyab.Guitaroid.GuitaroidMain this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.gerosyab.Guitaroid.GuitaroidMain$3 -> net.gerosyab.Guitaroid.br:
+    net.gerosyab.Guitaroid.GuitaroidMain this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.gerosyab.Guitaroid.GuitaroidMain$4 -> net.gerosyab.Guitaroid.bs:
+    net.gerosyab.Guitaroid.GuitaroidMain this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.gerosyab.Guitaroid.GuitaroidMain$5 -> net.gerosyab.Guitaroid.cr:
+    net.gerosyab.Guitaroid.GuitaroidMain this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.gerosyab.Guitaroid.GuitaroidMain$6 -> net.gerosyab.Guitaroid.cq:
+    net.gerosyab.Guitaroid.GuitaroidMain this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.gerosyab.Guitaroid.GuitaroidMain$7 -> net.gerosyab.Guitaroid.co:
+    net.gerosyab.Guitaroid.GuitaroidMain this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.gerosyab.Guitaroid.Information -> net.gerosyab.Guitaroid.Information:
+    void onCreate(android.os.Bundle) -> onCreate
+net.gerosyab.Guitaroid.MetronomeActivity -> net.gerosyab.Guitaroid.MetronomeActivity:
+    int beatCount -> a
+    int signature -> b
+    int signatureSoundSrcIdx -> c
+    int soundSrcIndex -> d
+    int beatIndex -> e
+    java.lang.String[] SOUND_SRC_TEXT -> p
+    int[][] SOUND_SRC -> q
+    int SOUND_SRC_NUM -> r
+    java.lang.String[] BEAT -> s
+    int BEAT_NUM -> t
+    boolean isVibOn -> f
+    boolean isMuteOn -> g
+    int bpm -> h
+    boolean isTapClicked -> u
+    boolean isPlay -> i
+    long tapStartTime -> v
+    long tapEndTime -> w
+    android.widget.TextView srcText -> x
+    android.widget.TextView beatText -> y
+    android.widget.Button tapTempoBtn -> z
+    android.widget.Button srcPrevBtn -> A
+    android.widget.Button srcNextBtn -> B
+    android.widget.Button sigPrevBtn -> C
+    android.widget.Button sigNextBtn -> D
+    android.widget.ToggleButton startStopBtn -> E
+    android.widget.ToggleButton vibBtn -> F
+    android.widget.ToggleButton muteBtn -> G
+    int[] rawResIds -> j
+    android.media.SoundPool soundPool -> H
+    net.gerosyab.Guitaroid.MetronomeActivity$SoundThread thread -> k
+    android.os.Vibrator vibrator -> l
+    android.content.Context context -> m
+    kankan.wheel.widget.WheelView wheel -> n
+    boolean wheelScrolled -> o
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    android.media.SoundPool access$0(net.gerosyab.Guitaroid.MetronomeActivity) -> a
+    android.widget.ToggleButton access$1(net.gerosyab.Guitaroid.MetronomeActivity) -> b
+    boolean access$2(net.gerosyab.Guitaroid.MetronomeActivity) -> c
+    void access$3(net.gerosyab.Guitaroid.MetronomeActivity,boolean) -> a
+    android.widget.Button access$4(net.gerosyab.Guitaroid.MetronomeActivity) -> d
+    void access$5(net.gerosyab.Guitaroid.MetronomeActivity,long) -> a
+    void access$6(net.gerosyab.Guitaroid.MetronomeActivity,long) -> b
+    long access$7(net.gerosyab.Guitaroid.MetronomeActivity) -> e
+    long access$8(net.gerosyab.Guitaroid.MetronomeActivity) -> f
+    android.widget.TextView access$9(net.gerosyab.Guitaroid.MetronomeActivity) -> g
+    java.lang.String[] access$10(net.gerosyab.Guitaroid.MetronomeActivity) -> h
+    int[][] access$11(net.gerosyab.Guitaroid.MetronomeActivity) -> i
+    android.widget.TextView access$12(net.gerosyab.Guitaroid.MetronomeActivity) -> j
+    java.lang.String[] access$13(net.gerosyab.Guitaroid.MetronomeActivity) -> k
+    android.widget.ToggleButton access$14(net.gerosyab.Guitaroid.MetronomeActivity) -> l
+    android.widget.ToggleButton access$15(net.gerosyab.Guitaroid.MetronomeActivity) -> m
+net.gerosyab.Guitaroid.MetronomeActivity$1 -> net.gerosyab.Guitaroid.by:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.MetronomeActivity$10 -> net.gerosyab.Guitaroid.av:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.MetronomeActivity$2 -> net.gerosyab.Guitaroid.ca:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+net.gerosyab.Guitaroid.MetronomeActivity$3 -> net.gerosyab.Guitaroid.bv:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.MetronomeActivity$4 -> net.gerosyab.Guitaroid.bw:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.MetronomeActivity$5 -> net.gerosyab.Guitaroid.cm:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.MetronomeActivity$6 -> net.gerosyab.Guitaroid.cn:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.MetronomeActivity$7 -> net.gerosyab.Guitaroid.cj:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.MetronomeActivity$8 -> net.gerosyab.Guitaroid.cl:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.MetronomeActivity$9 -> net.gerosyab.Guitaroid.ci:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.MetronomeActivity$SoundThread -> net.gerosyab.Guitaroid.cs:
+    net.gerosyab.Guitaroid.MetronomeActivity this$0 -> a
+    void run() -> run
+net.gerosyab.Guitaroid.RhythmGuideActivity -> net.gerosyab.Guitaroid.RhythmGuideActivity:
+    int CHILD_STATUS_STOPPED_COLOR -> q
+    int CHILD_STATUS_PLAYED_COLOR -> r
+    java.lang.String[] groups -> s
+    java.lang.String[][] children -> t
+    int[][] resource -> u
+    int[][] statuses -> v
+    kankan.wheel.widget.WheelView wheel -> a
+    boolean wheelScrolled -> b
+    android.content.Context context -> c
+    android.widget.Button tapTempoBtn -> d
+    int bpm -> e
+    boolean isTapClicked -> f
+    boolean isPlaying -> w
+    long tapStartTime -> g
+    long tapEndTime -> h
+    android.media.MediaPlayer mediaPlayer -> i
+    boolean bpmChanged -> j
+    int lastClickedGroupPostion -> k
+    int lastClickedChildPostion -> l
+    android.widget.ImageView lastPlayedChildStatusImage -> m
+    android.view.LayoutInflater inflater -> n
+    android.widget.ExpandableListAdapter mAdapter -> o
+    android.widget.ExpandableListView list -> p
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    boolean modifiedMidiFileGenerator(int) -> a
+    java.lang.String[][] access$0(net.gerosyab.Guitaroid.RhythmGuideActivity) -> a
+    int[][] access$1(net.gerosyab.Guitaroid.RhythmGuideActivity) -> b
+    java.lang.String[] access$2(net.gerosyab.Guitaroid.RhythmGuideActivity) -> c
+    int[][] access$3(net.gerosyab.Guitaroid.RhythmGuideActivity) -> d
+    boolean access$4(net.gerosyab.Guitaroid.RhythmGuideActivity,int) -> a
+    void access$5(net.gerosyab.Guitaroid.RhythmGuideActivity) -> e
+net.gerosyab.Guitaroid.RhythmGuideActivity$1 -> net.gerosyab.Guitaroid.e:
+    net.gerosyab.Guitaroid.RhythmGuideActivity this$0 -> a
+    boolean onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long) -> onChildClick
+net.gerosyab.Guitaroid.RhythmGuideActivity$2 -> net.gerosyab.Guitaroid.d:
+    net.gerosyab.Guitaroid.RhythmGuideActivity this$0 -> a
+    void onGroupExpand(int) -> onGroupExpand
+net.gerosyab.Guitaroid.RhythmGuideActivity$3 -> net.gerosyab.Guitaroid.c:
+    net.gerosyab.Guitaroid.RhythmGuideActivity this$0 -> a
+    void onChanged$38d22c4c(kankan.wheel.widget.WheelView,int) -> a
+net.gerosyab.Guitaroid.RhythmGuideActivity$4 -> net.gerosyab.Guitaroid.b:
+    net.gerosyab.Guitaroid.RhythmGuideActivity this$0 -> a
+    void onScrollingStarted$16b3c7ac() -> a
+    void onScrollingFinished(kankan.wheel.widget.WheelView) -> a
+net.gerosyab.Guitaroid.RhythmGuideActivity$5 -> net.gerosyab.Guitaroid.a:
+    net.gerosyab.Guitaroid.RhythmGuideActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.RhythmGuideActivity$CustomExpandableListAdapter -> net.gerosyab.Guitaroid.ad:
+    net.gerosyab.Guitaroid.RhythmGuideActivity this$0 -> a
+    java.lang.Object getChild(int,int) -> getChild
+    long getChildId(int,int) -> getChildId
+    android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup) -> getChildView
+    int getChildrenCount(int) -> getChildrenCount
+    java.lang.Object getGroup(int) -> getGroup
+    int getGroupCount() -> getGroupCount
+    long getGroupId(int) -> getGroupId
+    android.view.View getGroupView(int,boolean,android.view.View,android.view.ViewGroup) -> getGroupView
+    boolean hasStableIds() -> hasStableIds
+    boolean isChildSelectable(int,int) -> isChildSelectable
+net.gerosyab.Guitaroid.SongData -> net.gerosyab.Guitaroid.bo:
+    java.lang.String[] songList -> a
+    net.gerosyab.Guitaroid.SongData$Song song -> b
+    net.gerosyab.Guitaroid.SongData$Song loadSong(int) -> a
+    void loadButterfly() -> a
+    void loadCanon() -> b
+    void loadFallingSlowly() -> c
+    void loadWakeMeUpWhenSeptemberEnds() -> d
+    void loadRomance() -> e
+    void addHotelCalifornia() -> f
+    void loadWindSong() -> g
+    void loadNoSurprises() -> h
+    void loadShapeOfMyHeart() -> i
+net.gerosyab.Guitaroid.SongData$Song -> net.gerosyab.Guitaroid.bg:
+    java.lang.String title -> a
+    int[][] position -> b
+    int songLength -> c
+    boolean bLyric -> d
+    java.lang.String[] lyric -> e
+    int lyricLength -> f
+    int[] lyricIndex -> g
+net.gerosyab.Guitaroid.SongPlayActivity -> net.gerosyab.Guitaroid.SongPlayActivity:
+    boolean isDebug -> g
+    java.lang.String DEBUG_TAG -> h
+    int PROGRESSBAR_MAXIMUM -> i
+    int SOUNDPOOL_SWITCH_THRESHOLD -> j
+    int CURRENT_STRING_COLOR -> k
+    int NEXT_STRING_COLOR -> l
+    int EMPTY_STRING_COLOR -> m
+    android.widget.LinearLayout[] mStringColorLinear -> n
+    android.widget.LinearLayout[] mStringLinear -> o
+    android.widget.ImageView[] mStringImage -> p
+    int[] stringWidth -> q
+    int[] stringHeight -> r
+    int[] stringStartX -> s
+    int[] stringStartY -> t
+    float mPosX -> u
+    float mPosY -> v
+    float mLastTouchX -> w
+    float mLastTouchY -> x
+    int mActivePointerId -> y
+    boolean[] isStringTouched -> z
+    boolean[] isPlayed -> A
+    boolean[] isProcessed -> B
+    android.content.Context context -> C
+    android.media.SoundPool soundPool -> D
+    android.media.SoundPool[] soundPoolArray -> E
+    int[] rawResIds -> F
+    int[][] soundResourceTable -> G
+    boolean[] isMute -> H
+    android.widget.TextView titleText -> I
+    android.widget.TextView lyricText -> J
+    android.widget.TextView progressText -> a
+    android.widget.TextView[] mFretNum -> K
+    android.widget.Button playBtn -> b
+    android.widget.Button backwardBtn -> c
+    android.widget.Button forwardBtn -> d
+    android.widget.LinearLayout btnMotherLinear -> e
+    int songProgress -> L
+    int lyricProgress -> M
+    int progressPercentage -> N
+    boolean isTouchComplete -> O
+    boolean isPlay -> f
+    boolean isEnd -> P
+    net.gerosyab.Guitaroid.SongData$Song song -> Q
+    int curSoundPoolIndex -> R
+    void onCreate(android.os.Bundle) -> onCreate
+    void stepForward() -> a
+    boolean checkString(int) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    int checkTouchArea(float,float) -> a
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void access$0(net.gerosyab.Guitaroid.SongPlayActivity) -> a
+    void access$1(net.gerosyab.Guitaroid.SongPlayActivity) -> b
+net.gerosyab.Guitaroid.SongPlayActivity$1 -> net.gerosyab.Guitaroid.cc:
+    net.gerosyab.Guitaroid.SongPlayActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.SongPlayActivity$2 -> net.gerosyab.Guitaroid.cu:
+    net.gerosyab.Guitaroid.SongPlayActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.SongPlayActivity$3 -> net.gerosyab.Guitaroid.cv:
+    net.gerosyab.Guitaroid.SongPlayActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.SongSelect -> net.gerosyab.Guitaroid.SongSelect:
+    android.content.Context context -> a
+    void onCreate(android.os.Bundle) -> onCreate
+net.gerosyab.Guitaroid.SongSelect$1 -> net.gerosyab.Guitaroid.k:
+    net.gerosyab.Guitaroid.SongSelect this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+net.gerosyab.Guitaroid.SoundResourceTable -> net.gerosyab.Guitaroid.ay:
+    int[][] ACOUSTIC_RESOURCE_TABLE -> a
+net.gerosyab.Guitaroid.VirtualGuitar -> net.gerosyab.Guitaroid.VirtualGuitar:
+    android.widget.LinearLayout[] mStringLinear -> a
+    android.widget.ImageView[] mStringImage -> b
+    int[] stringWidth -> c
+    int[] stringHeight -> d
+    int[] stringStartX -> e
+    int[] stringStartY -> f
+    float mPosX -> g
+    float mPosY -> h
+    float mLastTouchX -> i
+    float mLastTouchY -> j
+    int mActivePointerId -> k
+    boolean[] isStringTouched -> l
+    android.content.Context context -> m
+    android.media.SoundPool soundPool -> n
+    int[] rawResIds -> o
+    boolean[] mute -> p
+    boolean[] loading -> q
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void playString(int) -> a
+    int checkTouchArea(float,float) -> a
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity -> net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity:
+    java.lang.String PREFERENCE_NAME -> n
+    java.lang.String INSTRUMENT_KEY -> o
+    android.widget.LinearLayout[] mStringLinear -> p
+    android.widget.ImageView[] mStringImage -> q
+    int stringWidth -> r
+    int stringHeight -> s
+    int[] stringStartX -> t
+    int[] stringStartY -> u
+    int buttonWidth -> v
+    int buttonHeight -> w
+    int[] buttonStartX -> x
+    int[] buttonStartY -> y
+    float mPosX -> z
+    float mPosY -> A
+    float mLastTouchX -> B
+    float mLastTouchY -> C
+    int mActivePointerId -> D
+    boolean[] isStringTouched -> E
+    android.content.Context context -> a
+    android.media.SoundPool soundPool -> b
+    int[] rawResIds -> c
+    boolean chordSelectFlag -> d
+    boolean isDialogDismiss -> e
+    int[][] soundResourceTable -> f
+    boolean[] mute -> g
+    boolean[] loading -> F
+    int clickedButtonIndex -> h
+    int longClickedButtonIndex -> i
+    java.lang.String[] chordLibrary -> j
+    android.widget.ToggleButton[] button -> k
+    net.gerosyab.Guitaroid.ChordData$Chord chord -> l
+    android.app.ProgressDialog dialog -> m
+    void onCreate(android.os.Bundle) -> onCreate
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void onResume() -> onResume
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void playString(int) -> a
+    int checkTouchArea(float,float) -> a
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$1 -> net.gerosyab.Guitaroid.cg:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$10 -> net.gerosyab.Guitaroid.an:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$11 -> net.gerosyab.Guitaroid.am:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$12 -> net.gerosyab.Guitaroid.aj:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$13 -> net.gerosyab.Guitaroid.ai:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$14 -> net.gerosyab.Guitaroid.al:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$15 -> net.gerosyab.Guitaroid.ak:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$16 -> net.gerosyab.Guitaroid.af:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$17 -> net.gerosyab.Guitaroid.ag:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$18 -> net.gerosyab.Guitaroid.ah:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$2 -> net.gerosyab.Guitaroid.ch:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$3 -> net.gerosyab.Guitaroid.ce:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$4 -> net.gerosyab.Guitaroid.cf:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$5 -> net.gerosyab.Guitaroid.cb:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$6 -> net.gerosyab.Guitaroid.cd:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$7 -> net.gerosyab.Guitaroid.bx:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$8 -> net.gerosyab.Guitaroid.bz:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$9 -> net.gerosyab.Guitaroid.bu:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity$LoadingThread -> net.gerosyab.Guitaroid.h:
+    net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity this$0 -> a
+    void run() -> run

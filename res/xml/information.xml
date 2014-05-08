@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Guitaroid">
+		
+		<PreferenceScreen
+                android:title="Change Log">
+
+             <intent
+             android:action="android.intent.action.MAIN"
+             android:targetPackage="net.gerosyab.Guitaroid"
+             android:targetClass="net.gerosyab.Guitaroid.activity.ChangeLogActivity" />
+
+        </PreferenceScreen>
+        
+        <PreferenceScreen
+                android:title="Email to developer"
+                android:summary="Any suggestions are welcome">
+
+            <intent android:action="android.intent.action.SENDTO"
+                    android:data="mailto:gerosyab@gmail.com" />
+
+        </PreferenceScreen>
+		
+		
+		<PreferenceScreen
+                android:title="Rating Guitaroid"
+                android:summary="If you like it, please rate it">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="market://details?id=net.gerosyab.Guitaroid" />
+
+        </PreferenceScreen>
+        
+<!--        <PreferenceScreen
+                android:title="Rating Guitaroid"
+                android:summary="If you like it, please rate it">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.tstore.co.kr/userpoc/game/viewProduct.omp?insProdId=0000274285" />
+
+        </PreferenceScreen>
+-->
+
+        <PreferenceScreen
+                android:title="Donation"
+                android:summary="Donation makes Guitaroid better and better">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://bit.ly/zyIom3" />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

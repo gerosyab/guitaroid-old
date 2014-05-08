@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GuitaroidMain!</string>
+    <string name="app_name">Guitaroid</string>
+    <string name="mainTitle1">Tuner</string>
+    <string name="mainTitle2">Metronome</string>
+    <string name="mainTitle3">Rhythm Guide</string>
+    <string name="mainTitle4">Virtual Guitar</string>
+    <string name="mainTitle5">Chord Book</string>
+    <string name="mainTitle6">My Records</string>
+    <string name="changeLog">
+        
+<font size="20" fgcolor="#ffcd0000"><b>Version 1.3.0 [2013/01/31]\n</b></font>
+<font size="15" fgcolor="#ff00c11b"><b>  Bug Fixed\n</b></font>
+<font size="13">    - Toast Message Does Not Appear since Honeycomb\n</font>
+<font size="13">    - Other Minor Bugs\n</font>
+<font size="15" fgcolor="#ff00c11b"><b>  Metronome\n</b></font>
+<font size="13">    - Support Backgroundable Metronome Play\n</font>
+<font size="15" fgcolor="#ff00c11b"><b>  Rhythm Guide\n</b></font>
+<font size="13">    - Support Backgroundable Rhythm Play\n</font>
+<font size="15" fgcolor="#ff00c11b"><b>  Virtual Guitar\n</b></font>
+<font size="13">    - Improve Sound Resource Loading Process\n</font>
+<font size="13">    - Add More Chord Preset Buttons\n</font>
+<font size="15" fgcolor="#ff00c11b"><b>  Song Play\n</b></font>
+<font size="13">    - Improve Sound Resource Loading Process\n</font>
+<font size="15" fgcolor="#ff00c11b"><b>  Ear Test\n</b></font>
+<font size="13">    - Widen The Note Octave Range (1 -> 2)\n</font>
+<font size="15" fgcolor="#ff00c11b"><b>  Chord Book\n</b></font>
+<font size="13">    - Remove the Sound Button\n\n\n</font>
+<b><font size="20" fgcolor="#ffcd0000">Version 1.1.0 [2012/01/31]\n</font></b>
+<font size="15" fgcolor="#ff00c11b"><b>  Title bar removed for efficient display\n</b></font>
+<font size="15" fgcolor="#ff00c11b"><b>  Song Play\n</b></font>
+<font size="13">    - Error occured when playing Canon 67% fixed\n</font>
+<font size="13">    - Song added : Shape of my heart - Sting\n</font>
+<font size="13">    - Song added : No surprises - Radiohead\n\n\n</font>
+<b><font size="20" fgcolor="#ffcd0000">Version 1.0.0 [2012/01/21]\n</font></b>
+<b><font size="15" fgcolor="#ff00c11b">  First Released!!\n</font></b>
+    
+    </string>
+    <string name="chordBookGuide">
+	    Touch the Chord Diagram\n
+	    to play Chord Sound\n
+    </string>
+    <string name="vitualGuitarGuide">
+	    Long Click the Button\n
+	    to change the presetted chord\n
+    </string>
+    <string name="metronome_service_started">Metronome</string>
+    <string name="rhythm_guide_service_started">Rhythm Guide</string>
+</resources>

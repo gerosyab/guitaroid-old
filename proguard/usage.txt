@@ -1,0 +1,229 @@
+kankan.wheel.R$anim
+kankan.wheel.R$attr
+kankan.wheel.R$drawable:
+    public static final int acoustic_1
+    public static final int acoustic_1_bak
+    public static final int acoustic_2
+    public static final int acoustic_2_bak
+    public static final int acoustic_3
+    public static final int acoustic_3_bak
+    public static final int acoustic_4
+    public static final int acoustic_4_bak
+    public static final int acoustic_5
+    public static final int acoustic_5_bak
+    public static final int acoustic_6
+    public static final int acoustic_6_bak
+    public static final int bg
+    public static final int bg2
+    public static final int bg_guitar
+    public static final int button
+    public static final int button_checked
+    public static final int button_checked_nine
+    public static final int button_def
+    public static final int button_default
+    public static final int button_default_nine
+    public static final int button_default_ninepatch
+    public static final int button_off_def
+    public static final int button_off_default
+    public static final int button_off_default_nine
+    public static final int button_off_default_ninepatch
+    public static final int button_off_pre
+    public static final int button_off_pressed
+    public static final int button_off_pressed_nine
+    public static final int button_off_pressed_ninepatch
+    public static final int button_on_def
+    public static final int button_on_default
+    public static final int button_on_default_nine
+    public static final int button_on_default_ninepatch
+    public static final int button_on_off
+    public static final int button_on_pre
+    public static final int button_on_pressed
+    public static final int button_on_pressed_nine
+    public static final int button_on_pressed_ninepatch
+    public static final int button_pre
+    public static final int button_pressed
+    public static final int button_pressed_nine
+    public static final int button_pressed_ninepatch
+    public static final int chordbook_icon_default
+    public static final int chordbook_icon_pressed
+    public static final int ear_test_icon_default
+    public static final int ear_test_icon_pressed
+    public static final int elec_1
+    public static final int elec_2
+    public static final int elec_3
+    public static final int elec_4
+    public static final int elec_5
+    public static final int elec_6
+    public static final int favorite_deselect
+    public static final int favorite_ondown
+    public static final int favorite_select
+    public static final int guide_cur_str2
+    public static final int guide_cur_string
+    public static final int guide_fret
+    public static final int guide_fret2
+    public static final int guide_next_str
+    public static final int guide_next_str2
+    public static final int icon
+    public static final int icon111
+    public static final int icon123
+    public static final int icon2
+    public static final int icon222
+    public static final int icon3
+    public static final int icon5
+    public static final int icon_big
+    public static final int icon_large
+    public static final int layout_bg
+    public static final int layout_bg2
+    public static final int layout_bg_child
+    public static final int layout_bg_group
+    public static final int metronome_icon_default
+    public static final int metronome_icon_pressed
+    public static final int play
+    public static final int rhythmguide_icon_default
+    public static final int rhythmguide_icon_pressed
+    public static final int songplay_icon_default
+    public static final int songplay_icon_pressed
+    public static final int stop
+    public static final int title
+    public static final int title2
+    public static final int title3
+    public static final int title4
+    public static final int title5
+    public static final int title__raw
+    public static final int tuner_icon_default
+    public static final int tuner_icon_pressed
+    public static final int virtualguitar_icon_default
+    public static final int virtualguitar_icon_pressed
+    public static final int visual_effect_bg_blue
+    public static final int visual_effect_bg_green
+    public static final int visual_effect_bg_red
+    public static final int visual_effect_bg_white
+kankan.wheel.R$id
+kankan.wheel.R$layout
+kankan.wheel.R$menu
+kankan.wheel.R$raw
+kankan.wheel.R$string
+kankan.wheel.R$xml
+kankan.wheel.widget.WheelAdapter
+kankan.wheel.widget.WheelScroller:
+    private static final int SCROLLING_DURATION
+    public static final int MIN_DELTA_FOR_SCROLLING
+    100:102:public void setInterpolator(android.view.animation.Interpolator)
+kankan.wheel.widget.WheelView:
+    private static final int ITEM_OFFSET_PERCENT
+    private static final int PADDING
+    private static final int DEF_VISIBLE_ITEMS
+    175:176:public void setInterpolator(android.view.animation.Interpolator)
+    184:184:public int getVisibleItems()
+    250:251:public void removeChangingListener(kankan.wheel.widget.OnWheelChangedListener)
+    277:278:public void removeScrollingListener(kankan.wheel.widget.OnWheelScrollListener)
+    303:304:public void addClickingListener(kankan.wheel.widget.OnWheelClickedListener)
+    311:312:public void removeClickingListener(kankan.wheel.widget.OnWheelClickedListener)
+    399:401:public void setCyclic(boolean)
+    877:878:public void stopScrolling()
+kankan.wheel.widget.adapters.AbstractWheelAdapter:
+    57:62:protected void notifyDataChangedEvent()
+    68:73:protected void notifyDataInvalidatedEvent()
+kankan.wheel.widget.adapters.AbstractWheelTextAdapter:
+    public static final int TEXT_VIEW_ITEM_RESOURCE
+    protected static final int NO_RESOURCE
+    public static final int DEFAULT_TEXT_COLOR
+    public static final int LABEL_COLOR
+    public static final int DEFAULT_TEXT_SIZE
+    99:99:public int getTextColor()
+    107:108:public void setTextColor(int)
+    115:115:public int getTextSize()
+    131:131:public int getItemResource()
+    139:140:public void setItemResource(int)
+    147:147:public int getItemTextResource()
+    163:163:public int getEmptyItemResource()
+    171:172:public void setEmptyItemResource(int)
+kankan.wheel.widget.adapters.AdapterWheel
+kankan.wheel.widget.adapters.NumericWheelAdapter:
+    public static final int DEFAULT_MAX_VALUE
+    private static final int DEFAULT_MIN_VALUE
+net.gerosyab.Guitaroid.BpmToSec:
+    public static final int length
+net.gerosyab.Guitaroid.ChordBookActivity:
+    private static final int WHEEL_VISIBLE_ITEM_NUM
+net.gerosyab.Guitaroid.ChordData:
+    public static final int ROOT_HASHMAP_CAPACITY
+    public static final int EXT_HASHMAP_CAPACITY
+    public static final int ROOT_NUM
+    public static final int MUTE
+net.gerosyab.Guitaroid.ChordSelector:
+    public static final java.lang.String RESULT
+    private static final int WHEEL_VISIBLE_ITEM_NUM
+net.gerosyab.Guitaroid.EarTestChordActivity:
+    private static final int WHEEL_VISIBLE_ITEM_NUM
+net.gerosyab.Guitaroid.EarTestNoteActivity:
+    private static final int WHEEL_VISIBLE_ITEM_NUM
+    kankan.wheel.widget.WheelView extWheel
+net.gerosyab.Guitaroid.MetronomeActivity:
+    public static final java.lang.String DEBUG_TAG
+    public static final int VIB_TIME
+    private static final int MIN_BPM
+    private static final int MAX_BPM
+    private static final int ANIMATION_DURATION
+net.gerosyab.Guitaroid.R
+net.gerosyab.Guitaroid.R$anim
+net.gerosyab.Guitaroid.R$attr
+net.gerosyab.Guitaroid.R$drawable
+net.gerosyab.Guitaroid.R$id
+net.gerosyab.Guitaroid.R$layout
+net.gerosyab.Guitaroid.R$menu
+net.gerosyab.Guitaroid.R$raw
+net.gerosyab.Guitaroid.R$string
+net.gerosyab.Guitaroid.R$xml
+net.gerosyab.Guitaroid.RhythmGuideActivity:
+    public static final java.lang.String DEBUG_TAG
+    public static final java.lang.String OUTPUT_FILE_NAME
+    public static final int BUFFER_SIZE
+    private static final int MAX_BPM
+    public static final int STATUS_STOP
+    public static final int STATUS_PLAY
+    int currentAudioSessionId
+    368:370:public static java.lang.String getHexString(byte)
+net.gerosyab.Guitaroid.SongPlayActivity:
+    public static final java.lang.String EXTRA_SONG_INDEX
+    protected static final int INVALID_POINTER_ID
+    protected static final int STRING6
+    protected static final int STRING5
+    protected static final int STRING4
+    protected static final int STRING3
+    protected static final int STRING2
+    protected static final int STRING1
+    protected static int curString
+    protected android.content.SharedPreferences pref
+    protected int instrument_type
+    android.media.SoundPool tempSoundPool
+net.gerosyab.Guitaroid.SoundResourceTable:
+    public static final int ACOUSTIC_FRET_LENGTH
+    public static final int STRAT_FRET_LENGTH
+net.gerosyab.Guitaroid.VirtualGuitar:
+    protected static final java.lang.String DEBUG_TAG
+    protected static final int INSTRUMENT_TYPE_ACOUTSTIC
+    protected static final int INSTRUMENT_TYPE_ELECTRIC
+    protected static final int INVALID_POINTER_ID
+    protected static final int STRING6
+    protected static final int STRING5
+    protected static final int STRING4
+    protected static final int STRING3
+    protected static final int STRING2
+    protected static final int STRING1
+    protected static int curString
+    protected android.content.SharedPreferences pref
+    protected int[][] soundResourceTable
+    protected int instrument_type
+net.gerosyab.Guitaroid.VirtualGuitarChordLibraryActivity:
+    protected static final java.lang.String DEBUG_TAG
+    protected static final int INVALID_POINTER_ID
+    protected static final int STRING6
+    protected static final int STRING5
+    protected static final int STRING4
+    protected static final int STRING3
+    protected static final int STRING2
+    protected static final int STRING1
+    protected static int curString
+    protected int instrument_type
+    public static final int REQUEST_CHORD_LIBRARY
